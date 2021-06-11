@@ -3,3 +3,65 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: caveat;
+    src: url('/public/Caveat/Caveat-VariableFont_wght.ttf');
+}
+
+.titulo {
+    font-family: caveat;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: aqua;
+}
+
+.redes {
+    background-color: blueviolet;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.bi-twitter, .bi-instagram {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.recuadro_grabar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.boton_grabar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.caption_grabar {
+    font-family: caveat;
+    font-size: 2rem;
+}
+
+.bi-record{
+    height: 40px;
+    width: 40px;
+}
+
+.caption_grabar, .bi-record {
+    margin: 0;
+}
