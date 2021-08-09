@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="menu"><img src="/public/icons/list.svg" alt="menu"></div>
+        <div class="menu" id="menu"><img src="/public/icons/list.svg" alt="menu"></div>
         <h1 class="titulo">SCREENIFY</h1>
         <div class="redes">
             <a href="#" class="link_twitter">
@@ -21,13 +21,19 @@
             </a>
         </div>
     </nav>
-<div class="recuadro_grabar">
-    <div class="boton_grabar">
-        <p class="caption_grabar">GRABAR!</p>
-        <img src="/public//icons/record-circle.svg" alt="icono-grabar" class="icono-grabar">
+    <div class="recuadro-accion">
+        <div class="boton-accion" id="botonAccion">
+            <div class="info-accion">
+                <p class="caption-accion">¡GRABAR!</p>
+                <div class="icono-accion"></div>
+            </div>
+        </div>
     </div>
-</div>
-
-<script src="/public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <video id="captura" autoplay></video>
+    
+    
+    <script src="/public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/index.js"></script>
 </body>
 </html>

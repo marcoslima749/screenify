@@ -1,6 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
+
+:root {
+    --bg : #24201B;
+    --primary : #080707; 
+    --typography: #E8CCCC;
+    --accent : #CC0A0A;
+    --secundary : #333232;
 }
 
 @font-face {
@@ -13,25 +17,37 @@
     src: url('/public/Montserrat/Montserrat-Regular.ttf');
 }
 
-.titulo {
-    font-family: caveat;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    justify-items: center;
     width: 100%;
-    justify-content: space-between;
-    background-color: aqua;
+    background-color: var(--secundary);
     padding: 5px 2rem;
 }
 
+
+.titulo {
+    font-family: caveat;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--typography);
+    margin: 0;
+}
 .redes {
-    background-color: blueviolet;
-    width: 10rem;
+    width: 60%;
     height: 2rem;
     display: flex;
     justify-content: space-evenly;
@@ -41,42 +57,77 @@
 
 .bi-twitter, .bi-instagram {
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
-.recuadro_grabar {
+.recuadro-accion {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
 }
 
-.boton_grabar {
+.boton-accion {
     display: flex;
     width: 50%;
-    border: 2px solid grey;
-    border-radius: 1rem;
     cursor: pointer;
+    color: var(--typography);
+    background-color: var(--primary);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--secundary);
+    justify-content: center;
+    
 }
 
+.info-accion {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-.icono-grabar {
-    justify-self: flex-end;
 }
-.caption_grabar {
+
+.caption-accion {
     font-family: montserrat;
     font-size: 2rem;
-    cursor: pointer;
-    justify-self: center;
+    margin: 0;
+
+}
+
+.icono-accion {
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    mask-image: url("/public/icons/record-fill.svg");
+    mask-repeat: no-repeat;
+    mask-size: 25px 25px;
+    -webkit-mask-image: url("/public/icons/record-fill.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 25px 25px;
+
+    
+
 }
 
 .bi-record{
-    height: 40px;
-    width: 40px;
+    width: 60px;
+    height: 60px;
 }
 
-.caption_grabar, .bi-record {
+.caption-accion, .bi-record {
     margin: 0;
 }
 
+.link_instagram, .link_twitter {
+    display: flex;
+    align-items: center;
+}
+
+.asasdfasdfasdfa {
+    color: rgb(17, 154, 251);
+    color: #00ACEE;
+    color: #119AFB;
+}
