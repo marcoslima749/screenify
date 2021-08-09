@@ -17,11 +17,29 @@ const URL_ICONO = {
 
 let captura = document.getElementById("captura");
 
+let estadoActual = ESTADO.DETENIDO;
+
 let captureOptions = {
     video : {
         cursor : 'always'
     },
     audio: false
+}
+
+const verificarEstado = () => {
+    switch (estadoActual) {
+        case ESTADO.DETENIDO :
+            startCapture();
+            estadoActual = ESTADO.GRABANDO;
+            break;
+        
+        case ESTADO.GRABANDO :
+            alert("El grabador ya está corriendo");
+            break;
+        
+        case ESTADO.PAUSADO : 
+            continueCapture();
+    }
 }
 
 const startCapture = async () => {
@@ -48,6 +66,10 @@ const stopCapture = async () => {
 
 const pauseCapture = async () => {
     
+};
+
+const continueCapture = async () => {
+
 };
 
 const botonAccion = document.getElementById("botonAccion");
