@@ -1,0 +1,31 @@
+
+
+
+grabar		verificar	grabando	error	alert('ya está) salir
+				pausado		ok 	continuar	
+				detenido	ok	grabar
+
+pausar		verificar	grabando	ok	pausar
+				pausado		error	alert('ya está) salir
+				detenido	error	alert('ya está) salir
+
+detener		verificar	grabando	ok	detener
+				pausado		ok	detener
+				detenido	error	alert('ya está) salir
+
+continuar	verificar	grabando 	error	alert('ya está) salir
+				pausado		ok	continuar
+				detenido	error	alert('esta detenido') salir
+
+********************************************************************************************
+
+grabar		verificar	grabando	error	alert('ya está) salir
+				pausado		ok 	grabar
+				detenido	ok	grabar
+
+detener/pausar	verificar	grabando	ok	detener
+				pausado		error	alert('ya está) salir
+				detenido	error	alert('ya está) salir
+
+guardar		verificar	existe		ok	guardar		borrar caché
+				no existe	error	alert('no hay grabaciones') salir

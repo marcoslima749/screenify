@@ -9,7 +9,7 @@
     <title>Screenify</title>
 </head>
 <body>
-    <nav class="navbar">
+    <header class="navbar">
         <div class="menu" id="menu"><img src="/public/icons/list.svg" alt="menu"></div>
         <h1 class="titulo">SCREENIFY</h1>
         <div class="redes">
@@ -20,20 +20,64 @@
                 <img src="/public/icons/instagram.svg" alt="instagram">
             </a>
         </div>
-    </nav>
-    <div class="recuadro-accion">
-        <div class="boton-accion" id="botonAccion">
-            <div class="info-accion">
-                <p class="caption-accion">¡GRABAR!</p>
-                <div class="icono-accion"></div>
+    </header>
+    
+    <section class="interface">
+        
+        <div class="grabar-pausar" id="pausarDetener">
+
+            <div class="boton-grabar mostrar" id="botonGrabar">
+                <div class="info-grabar">
+                    <p class="caption-grabar">¡GRABAR!</p>
+                    <div class="icono-grabar"></div>
+                </div>
+            </div>
+                    
+            <div class="boton-pausar-detener ocultar" id="botonPausarDetener">
+                <div class="info-pausar-detener">
+                    <p class="caption-pausar-detener">Pausar</p>
+                    <div class="icono-pausar"></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="toggle-audio">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Audio</label>
             </div>
         </div>
-    </div>
+
+        <div class="guardar-descartar">
+
+            <div class="boton-guardar" id="botonGuardar">
+                <div class="info-guardar">
+                    <p class="caption-guardar">Guardar</p>
+                    <div class="icono-guardar"></div>
+                </div>
+            </div>
+                
+            <div class="boton-descartar" id="botonDescartar">
+                <div class="info-descartar">
+                    <p class="caption-descartar">Descartar</p>
+                    <div class="icono-descartar"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="seccion-captura ">
+
+        <video class="captura no-video" id="captura" autoplay muted></video>
+
+    </section>
     
-    <video id="captura" autoplay></video>
     
     
     <script src="/public/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/src/index.js"></script>
+    <script defer src="/src/index.js"></script>
 </body>
 </html>

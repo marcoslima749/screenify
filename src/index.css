@@ -22,11 +22,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bg);
+    height: 100vh;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -61,16 +63,18 @@ body {
     width: 40px;
 }
 
-.recuadro-accion {
+.interface {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: montserrat;
 }
 
-.boton-accion {
+.boton-grabar, .boton-pausar-detener, .boton-guardar, .boton-descartar {
     display: flex;
-    width: 50%;
     cursor: pointer;
     color: var(--typography);
     background-color: var(--primary);
@@ -79,47 +83,125 @@ body {
     border-width: 2px;
     border-color: var(--secundary);
     justify-content: center;
-    
 }
 
-.info-accion {
+
+.boton-grabar {
     width: 50%;
+}
+
+.boton-pausar-detener {
+    width: 40%;
+}
+
+.boton-guardar, .boton-descartar {
+    width: 45%;
+
+}
+
+
+.info-grabar, .info-pausar-detener, .info-guardar, .info-descartar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    width: 100%;
 }
 
-.caption-accion {
-    font-family: montserrat;
+.info-grabar {
+    width: 50%;
+}
+
+.info-pausar-detener {
+    width: 80%;
+}
+/*
+.info-guardar, .info-descartar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+*/
+
+.caption-grabar, .caption-pausar-detener {
     font-size: 2rem;
     margin: 0;
-
 }
 
-.icono-accion {
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    mask-image: url("/public/icons/record-fill.svg");
-    mask-repeat: no-repeat;
-    mask-size: 25px 25px;
-    -webkit-mask-image: url("/public/icons/record-fill.svg");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 25px 25px;
-
-    
-
-}
-
-.bi-record{
-    width: 60px;
-    height: 60px;
-}
-
-.caption-accion, .bi-record {
+.caption-guardar, .caption-descartar {
     margin: 0;
 }
+
+.icono-grabar, .icono-pausar, .icono-detener, .icono-guardar, .icono-descartar {
+    height: 25px;
+    width: 25px;
+    mask-repeat: no-repeat;
+    mask-size: 25px 25px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 25px 25px;
+}
+
+.icono-grabar {
+    background-color: red;
+    mask-image: url("/public/icons/record-fill.svg");
+    -webkit-mask-image: url("/public/icons/record-fill.svg");
+}
+
+.icono-pausar {
+    background-color: var(--typography);
+    mask-image: url("/public/icons/pause-circle.svg");
+    -webkit-mask-image: url("/public/icons/pause-circle.svg");
+}
+
+.icono-detener {
+    background-color: red;
+    mask-image: url("/public/icons/stop-circle.svg");
+    -webkit-mask-image: url("/public/icons/stop-circle.svg");
+}
+
+.icono-guardar {
+    background-color: var(--typography);
+    mask-image: url("/public/icons/download.svg");
+    -webkit-mask-image: url("/public/icons/download.svg");
+}
+
+.icono-descartar {
+    background-color: var(--typography);
+    mask-image: url("/public/icons/xmark.svg");
+    -webkit-mask-image: url("/public/icons/xmark.svg");
+}
+
+.grabar-pausar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.guardar-descartar {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+}
+
+.toggle-audio {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form-check.form-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.form-check-label {
+    color: var(--typography);
+    font-size: 1.5rem;
+}
+
 
 .link_instagram, .link_twitter {
     display: flex;
@@ -130,4 +212,39 @@ body {
     color: rgb(17, 154, 251);
     color: #00ACEE;
     color: #119AFB;
+}
+
+.seccion-captura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: calc(100% - 162px - 52px - 64px); /*100% - alto header - alto section - margen superior section*/
+    
+}
+
+.captura{
+    background-color: var(--secundary);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.no-video {
+
+    mask-image: url("/public/icons/novideo.svg");
+    -webkit-mask-image: url("/public/icons/novideo.svg");
+    mask-size: auto;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: auto;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: flex;
 }
