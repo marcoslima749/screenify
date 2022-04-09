@@ -91,7 +91,7 @@ body {
 }
 
 .boton-pausar-detener {
-    width: 40%;
+    width: 50%;
 }
 
 .boton-guardar, .boton-descartar {
@@ -230,7 +230,7 @@ body {
 }
 
 .no-video {
-
+    background-color: var(--primary);
     mask-image: url("/public/icons/novideo.svg");
     -webkit-mask-image: url("/public/icons/novideo.svg");
     mask-size: auto;
