@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/src/index.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/src/index.css" rel="stylesheet" />
     <title>Screenify</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="navbar">
-        <div class="menu" id="menu"><img src="/public/icons/list.svg" alt="menu"></div>
-        <h1 class="titulo">SCREENIFY</h1>
-        <div class="redes">
-            <a href="#" class="link_twitter">
-                <img src="/public/icons/twitter.svg" alt="twitter">
-            </a>
-            <a href="#" class="link_instagram">
-                <img src="/public/icons/instagram.svg" alt="instagram">
-            </a>
-        </div>
+      <div class="menu" id="menu">
+        <img src="/public/icons/list.svg" alt="menu" />
+      </div>
+      <h1 class="titulo">SCREENIFY</h1>
+      <div class="redes">
+        <a href="#" class="link_twitter">
+          <img src="/public/icons/twitter.svg" alt="twitter" />
+        </a>
+        <a href="#" class="link_instagram">
+          <img src="/public/icons/instagram.svg" alt="instagram" />
+        </a>
+      </div>
     </header>
-    
+
     <section class="interface">
-        
-        <div class="grabar-pausar" id="pausarDetener">
-
-            <div class="boton-grabar mostrar" id="botonGrabar">
-                <div class="info-grabar">
-                    <p class="caption-grabar">¡GRABAR!</p>
-                    <div class="icono-grabar"></div>
-                </div>
-            </div>
-                    
-            <div class="boton-pausar-detener ocultar" id="botonPausarDetener">
-                <div class="info-pausar-detener">
-                    <p class="caption-pausar-detener">Pausar</p>
-                    <div class="icono-pausar"></div>
-                </div>
-            </div>
-            
+      <div class="grabar-pausar" id="pausarDetener">
+        <div class="boton-grabar mostrar" id="botonGrabar">
+          <div class="info-grabar">
+            <p class="caption-grabar">¡GRABAR!</p>
+            <div class="icono-grabar"></div>
+          </div>
         </div>
 
-        <div class="toggle-audio">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Audio</label>
-            </div>
+        <div class="boton-pausar-detener ocultar" id="botonPausarDetener">
+          <div class="info-pausar-detener">
+            <p class="caption-pausar-detener">Pausar</p>
+            <div class="icono-pausar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="toggle-audio">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >Audio</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="checkCamara"
+          />
+          <label class="form-check-label" for="checkCamara">Cámara</label>
+        </div>
+      </div>
+
+      <div class="guardar-descartar">
+        <div class="boton-guardar" id="botonGuardar">
+          <div class="info-guardar">
+            <p class="caption-guardar">Guardar</p>
+            <div class="icono-guardar"></div>
+          </div>
         </div>
 
-        <div class="guardar-descartar">
-
-            <div class="boton-guardar" id="botonGuardar">
-                <div class="info-guardar">
-                    <p class="caption-guardar">Guardar</p>
-                    <div class="icono-guardar"></div>
-                </div>
-            </div>
-                
-            <div class="boton-descartar" id="botonDescartar">
-                <div class="info-descartar">
-                    <p class="caption-descartar">Descartar</p>
-                    <div class="icono-descartar"></div>
-                </div>
-            </div>
-
+        <div class="boton-descartar" id="botonDescartar">
+          <div class="info-descartar">
+            <p class="caption-descartar">Descartar</p>
+            <div class="icono-descartar"></div>
+          </div>
         </div>
-
+      </div>
     </section>
 
-    <section class="seccion-captura ">
-
-        <video class="captura no-video" id="captura" autoplay muted></video>
-
+    <section class="seccion-captura">
+      <video class="captura no-video" id="captura" autoplay muted></video>
     </section>
-    
-    
-    
+
+    <div id="modalBackground" class="modal-background">
+      <div class="modal-container">
+        <p class="modal-caption">
+          Necesitamos habilitar el picture-in-picture para mostrar la cámara. ¿
+          Confirmar ?
+        </p>
+        <div class="modal-interface">
+          <div id="modalConfirmar" class="modal-button">Aceptar</div>
+          <div id="modalCancelar" class="modal-button">Cancelar</div>
+        </div>
+      </div>
+    </div>
+
     <script src="/public/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script defer src="/src/index.js"></script>
-</body>
+  </body>
 </html>
