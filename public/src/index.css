@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: caveat;
-  src: url("/public/Caveat/Caveat-VariableFont_wght.ttf");
+  src: url("/assets/Caveat/Caveat-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: montserrat;
-  src: url("/public/Montserrat/Montserrat-Regular.ttf");
+  src: url("/assets/Montserrat/Montserrat-Regular.ttf");
 }
 
 body {
@@ -149,32 +149,32 @@ body {
 
 .icono-grabar {
   background-color: red;
-  mask-image: url("/public/icons/record-fill.svg");
-  -webkit-mask-image: url("/public/icons/record-fill.svg");
+  mask-image: url("/assets/icons/record-fill.svg");
+  -webkit-mask-image: url("/assets/icons/record-fill.svg");
 }
 
 .icono-pausar {
   background-color: var(--typography);
-  mask-image: url("/public/icons/pause-circle.svg");
-  -webkit-mask-image: url("/public/icons/pause-circle.svg");
+  mask-image: url("/assets/icons/pause-circle.svg");
+  -webkit-mask-image: url("/assets/icons/pause-circle.svg");
 }
 
 .icono-detener {
   background-color: red;
-  mask-image: url("/public/icons/stop-circle.svg");
-  -webkit-mask-image: url("/public/icons/stop-circle.svg");
+  mask-image: url("/assets/icons/stop-circle.svg");
+  -webkit-mask-image: url("/assets/icons/stop-circle.svg");
 }
 
 .icono-guardar {
   background-color: var(--typography);
-  mask-image: url("/public/icons/download.svg");
-  -webkit-mask-image: url("/public/icons/download.svg");
+  mask-image: url("/assets/icons/download.svg");
+  -webkit-mask-image: url("/assets/icons/download.svg");
 }
 
 .icono-descartar {
   background-color: var(--typography);
-  mask-image: url("/public/icons/xmark.svg");
-  -webkit-mask-image: url("/public/icons/xmark.svg");
+  mask-image: url("/assets/icons/xmark.svg");
+  -webkit-mask-image: url("/assets/icons/xmark.svg");
 }
 
 .grabar-pausar {
@@ -239,8 +239,8 @@ body {
 
 .no-video {
   background-color: var(--primary);
-  mask-image: url("/public/icons/novideo.svg");
-  -webkit-mask-image: url("/public/icons/novideo.svg");
+  mask-image: url("/assets/icons/novideo.svg");
+  -webkit-mask-image: url("/assets/icons/novideo.svg");
   mask-size: auto;
   mask-position: center;
   mask-repeat: no-repeat;

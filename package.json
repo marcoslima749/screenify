@@ -1,0 +1,25 @@
+{
+  "name": "screenify",
+  "version": "1.0.0",
+  "description": "Capturador simple de pantalla y cámara. Online, sin instalación ni login.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoslima749/screenify.git"
+  },
+  "keywords": [
+    "screencapture",
+    "screenrecording",
+    "screenrecorder",
+    "screenrecording"
+  ],
+  "author": "Marcos Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoslima749/screenify/issues"
+  },
+  "homepage": "https://github.com/marcoslima749/screenify#readme"
+}
